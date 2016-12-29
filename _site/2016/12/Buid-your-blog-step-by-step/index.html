@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>Guihong WAN</title>
-  <meta name="description" content="欢迎来到我的个人站~">
+  <title>Jekyll+github Personal Blog</title>
+  <meta name="description" content="Let's deploy your personal blog with Jekyll+github step by step.">
   <meta name="author" content="leopardpan">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Guihong WAN">
-  <meta name="twitter:description" content="欢迎来到我的个人站~">
+  <meta name="twitter:title" content="Jekyll+github Personal Blog">
+  <meta name="twitter:description" content="Let's deploy your personal blog with Jekyll+github step by step.">
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Guihong WAN">
-  <meta property="og:description" content="欢迎来到我的个人站~">
+  <meta property="og:title" content="Jekyll+github Personal Blog">
+  <meta property="og:description" content="Let's deploy your personal blog with Jekyll+github step by step.">
   
   <link rel="icon" type="image/png" href="/images/favicon.png" />
   <link href="/images/favicon.png" rel="shortcut icon" type="image/png">
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="canonical" href="https://guihongwan.github.io/tags/">
+  <link rel="canonical" href="https://guihongwan.github.io/2016/12/Buid-your-blog-step-by-step/">
   <link rel="alternate" type="application/rss+xml" title="Guihong WAN" href="https://guihongwan.github.io/feed.xml">
   
   <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
@@ -167,68 +167,123 @@
         <div class="content-wrapper__inner">
             <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
+    <h1 class="post-title">Jekyll+github Personal Blog</h1>
     <div class="post-meta">
-      <time datetime="" itemprop="datePublished" class="post-meta__date date"></time>
-      <span class="post-meta__tags tags"></span>
+      <img src="/images/calendar.png" width="20px"/> 
+      <time datetime="2016-12-28 00:00:00 +0800" itemprop="datePublished" class="post-meta__date date">2016-12-28</time>  
+         
+      <span id="busuanzi_container_page_pv"> | 阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
     </div>
-    <h1 class="post-title"></h1>
   </header>
 
   <section class="post">
-    
+    <div class="highlighter-rouge"><pre class="highlight"><code>Let's deploy your personal blog with Jekyll+github step by step.
+</code></pre>
+</div>
 
-<ul class="tag_box inline">
-    
-  
+<h2 id="content">CONTENT：</h2>
+<ul>
+  <li>
+    <p>Step0: install Ruby<br />
+1 install RVM<br />
+$curl -L https://get.rvm.io | bash -s stable<br />
+$source ~/.rvm/scripts/rvm<br />
+$rvm -v #check the version</p>
 
+    <p>2 install ruby<br />
+$sudo rvm list known    # list all the ready ruby<br />
+$ruby -v                #old version ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin15]
+$sudo rvm install 2.0.0</p>
 
-  
-     
-    	<li><a href="#博客-ref">博客 <span>2</span></a></li>
-    
-  
+    <p>3 if you live in China, you might not be able to access to rubygems.
+$gem source -r https://rubygems.org/<br />
+$gem sources -a https://gems.ruby-china.org/<br />
+$gem sources -l</p>
+  </li>
+  <li>
+    <p>Step1: install gem  <br />
+$gem -v     #check the version<br />
+$sudo gem update –system #update gem</p>
+  </li>
+  <li>
+    <p>Step2: install jekyll <br />
+$sudo gem install jekyll <br />
+$jekyll -v # check the version</p>
+  </li>
+  <li>
+    <p>Step3:<br />
+$jekyll build<br />
+$jekyll server
+then, vist through browser: http://127.0.0.1:4000<br />
+or<br />
+$cd git_workspace/guihongwan.github.io<br />
+$bundle exec jekyll build<br />
+$bundle exec jekyll server<br />
+Use your browser to visit:http://127.0.0.1:4000/</p>
+  </li>
+  <li>
+    <p>tips:</p>
+    <ol>
+      <li>update jekyll:<br />
+$gem update jekyll</li>
+      <li>reference:<br />
+https://help.github.com/categories/github-pages-basics/<br />
+http://baixin.io/2016/10/jekyll_tutorials1/</li>
+      <li>problems:<br />
+p1: Operation not permitted - /usr/bin/kramdown<br />
+solution: sudo gem install jekyll –user-install</li>
+    </ol>
 
+    <p>p2: Error installing jekyll:<br />
+     ERROR: Failed to build gem native extension.<br />
+    solution: please install “xcode 6 command line tools” first. $ xcode-select –install</p>
 
-
+    <p>p3: Operation not permitted - /usr/bin/listen<br />
+    solution:  <br />
+        $/usr/bin/ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”  #brew, also named brew, is as same as apt-get in Ubuntu http://brew.sh/   <br />
+        $brew install ruby  #brew uninstall ruby</p>
+  </li>
 </ul>
 
-<div class = "card">
- 
 
-  <h3 id="博客-ref">博客</h3>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/2016/12/My-Personal-Blog/">我的个人博客</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2016/12/Buid-your-blog-step-by-step/">Jekyll+github Personal Blog</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
-
-
-
-</div>
 
   </section>
 </article>
+
+<section>
+       <ul class="pager">
+        
+        
+        <li class="next">
+            <a href="/2016/12/My-Personal-Blog/" data-toggle="tooltip" data-placement="top" title="我的个人博客">下一篇：  <span>我的个人博客</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+<section class="post-comments">
+
+  
+    <div class="ds-thread" data-thread-key="/2016/12/Buid-your-blog-step-by-step/" data-title="Jekyll+github Personal Blog" data-url="https://guihongwan.github.io/2016/12/Buid-your-blog-step-by-step/"></div>
+
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"guihongwan"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+  
+  
+  
+  
+</section>
+
 
             <section class="footer">
     <footer>
