@@ -5,8 +5,8 @@
     <description>欢迎来到我的个人站~</description>
     <link>https://guihongwan.github.io/</link>
     <atom:link href="https://guihongwan.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Dec 2016 19:36:58 +0800</pubDate>
-    <lastBuildDate>Thu, 29 Dec 2016 19:36:58 +0800</lastBuildDate>
+    <pubDate>Thu, 29 Dec 2016 19:56:36 +0800</pubDate>
+    <lastBuildDate>Thu, 29 Dec 2016 19:56:36 +0800</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -16,11 +16,11 @@
 &lt;/div&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;正文：&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;最近要开始新的学习了，想把学习的过程记录下来。所以，用Jekyll+github搭建了自己的个人站。 
-为什么放弃csdn？装呗
-很喜欢这个主题，感谢[leopardpan](http://baixin.io/)。 　  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;最近要开始新的学习了，想把学习的过程记录下来。所以，用Jekyll+github搭建了自己的个人站。&lt;/p&gt;
+
+&lt;p&gt;为什么放弃 &lt;a href=&quot;http://blog.csdn.net/laurawan&quot; title=&quot;Title&quot;&gt;csdn&lt;/a&gt;? 因为有人喜欢 装 .
+　&lt;br /&gt;
+很喜欢这个主题，感谢 &lt;a href=&quot;http://baixin.io/ “Title”&quot;&gt;leopardpan&lt;/a&gt;。&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Dec 2016 00:00:00 +0800</pubDate>
         <link>https://guihongwan.github.io/2016/12/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
