@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Jekyll+github Personal Blog"
-date: 2016-12-28 
+date: 2016-12-29  
 description: "Use Jekyll+github to deploy personal blog"  
 
-tag: 博客 
+tag: TOOL 
 ---   
-    Let's deploy your personal blog with Jekyll+github step by step.
+    Let's deploy your personal blog with Jekyll+github.
 
 ## CONTENT：
 +   Step0: install Ruby  
