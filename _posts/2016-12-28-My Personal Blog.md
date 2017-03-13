@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "我的个人博客"
+title: "My Personal Blog"
 date: 2016-12-28 
-description: "我的个人博客"
+description: "My Personal Blog"
 tag: BLOG 
 ---   
     2017年来了，让我们一起做 学霸 吧。

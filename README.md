@@ -10,7 +10,7 @@
 
 > guihongwan.github.io is my website.
 
-> hello-usa is document repository.  
+> hello-usa is a document repository.  
 
 
 ### Acknoweledgement   
