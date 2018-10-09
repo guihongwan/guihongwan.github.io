@@ -1,21 +1,15 @@
 ---
 layout: page
-title: 关于我 
+title: About me 
 ---
 
-一个 Android 开发者，喜欢研究一些新技术。
+I'm a master student. I will continue to pursue my PhD degree.
 <p>
-
-喜欢异想天开，瞎捣腾。
+Currently, I'm working in Computer Vision and Data Lab.
+My research interests are Data Representation, Featrue Selection and extraction.
 <p>
-
-我的梦想是...
+I was an Android software engineer.
 <p>
-
-
-我最近在学习 网络编程 英语 和 离散数学，有没有兴趣一起呢？
-<p>
-
 
 {% include comments.html %}
 
