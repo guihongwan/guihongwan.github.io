@@ -1,5 +1,11 @@
+---
+layout: post
+title: "My notes for html&css 2"
+date: 2017-03-13 
+description: "My notes for html&css 2"  
 
-tag: Data Representation
+tag: Data Representation 
+---
 
 # The "Power" Method
 
@@ -19,9 +25,6 @@ from tools import tool
 import matplotlib.pyplot as plt
 %pylab inline
 ```
-
-    Populating the interactive namespace from numpy and matplotlib
-
 
 
 ```python
