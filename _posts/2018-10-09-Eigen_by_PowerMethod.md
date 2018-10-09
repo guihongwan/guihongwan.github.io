@@ -1,9 +1,4 @@
----
-layout: post
-title: "My notes for html&css 2"
-date: 2017-03-13 
-description: "My notes for html&css 2"  
-
+---  
 tag: Data Representation 
 ---
 
