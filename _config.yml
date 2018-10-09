@@ -5,12 +5,11 @@ description: Welcome to my website
 # 头像里面的标题
 avatarTitle: ghwan
 # 头像里面的描述
-avatarDesc: Android / Machine learning
+avatarDesc: Data Analysis / Machine learning
 url: "https://guihongwan.github.io"
 
 # Comment
 comment:
-    # disqus: guihongwan
     duoshuo: guihongwan 
 
 # Social
@@ -18,7 +17,7 @@ social:
     # weibo: 
     github: guihongwan
     # twitter: 
-    mail: laura.c.wan@qq.com
+    mail: guihong.wan@utdallas.edu
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
