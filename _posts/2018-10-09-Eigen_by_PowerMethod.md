@@ -1,4 +1,6 @@
 
+tag: Data Representation
+
 # The "Power" Method
 
 The 'power' method to compute dominant eigenvectors/eigenvalues.
