@@ -1,0 +1,52 @@
+<section class="footer">
+    <footer>
+        <div class = "footer_div">  
+        <nav class="cover-navigation navigation--social">
+          <ul class="navigation">
+
+          {% if site.social.github %}
+          <!-- Github -->
+          <li class="navigation__item_social">
+            <a href="https://github.com/{{site.social.github}}" title="@{{site.social.github}} Github">
+              <i class='social fa fa-github fa-2x'></i>
+              <span class="label">Github</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.social.mail %}
+          <!-- Email -->
+          <li class="navigation__item_social">
+            <a href="mailto:{{site.social.mail}}" title="Contact Me">
+              <i class='social fa fa-envelope fa-2x'></i>
+              <span class="label">Email</span>
+            </a>
+          </li>
+          {% endif %}
+
+          </ul>
+        </nav>
+
+        </div>
+
+        <div class = "footer_div">  
+          <p class="copyright text-muted">
+            Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }} |
+            <iframe
+                style="margin-left: 2px; margin-bottom:-5px;"
+                frameborder="0" scrolling="0" width="91px" height="20px"
+                src="https://ghbtns.com/github-btn.html?user=guihongwan&repo=guihongwan.github.io&type=star&count=true" >
+            </iframe>
+          </p>
+        	<!--访问统计<div align="right">
+    			<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+          <span id="busuanzi_container_site_pv">
+            本站总访问量
+            <span id="busuanzi_value_site_pv"></span>次
+          </span>
+          </div>-->
+
+        </div>
+    </footer>
+</section>
