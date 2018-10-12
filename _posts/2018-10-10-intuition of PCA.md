@@ -1,3 +1,6 @@
+---  
+tag: Data Representation 
+---
 
 # TASK
 - Find linear combinations that maximize variance subject to being uncorrelated with those already selected.    
