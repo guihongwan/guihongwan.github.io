@@ -226,12 +226,13 @@ printRulesForTransformation(transformation2, best_rules)
     [(42, ('NN', 'VB', 'MD'))]
     [(16, ('VB', 'NN', 'DT'))]
 
-<br>
-
-Reference：[Speech and Language Processing An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition]
-
-<br>
-For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [Transformation-based POS Tagging](https://guihongwan.github.io/2018/10/Transformation-based POS Tagging/) 
-
 The above logs show that we need change NN to VB, when the previous word is MD, like 'can'     
 and VB to NN, when the previous word is DT.
+
+
+<br>
+
+Reference：Speech and Language Processing An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition, SECOND EDITION.
+
+<br>
+For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [Transformation-based POS Tagging](https://guihongwan.github.io/2018/10/Transformation-based-POS-Tagging/) 
