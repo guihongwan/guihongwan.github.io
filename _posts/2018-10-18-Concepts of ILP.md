@@ -113,6 +113,8 @@ arcs correspond to the basic refinement operations:
 #### Refinement Graph(Lattice)
 
 <img src="refinementgraph.png" />
+<img src="..\\..\\refinementgraph.png" />
+<img src="..\\..\\..\\refinementgraph.png" />
 
 The task is to learn a definition of the daughter relation in terms of the relation female and parent.    
 
