@@ -112,8 +112,7 @@ arcs correspond to the basic refinement operations:
 
 #### Refinement Graph(Lattice)
 
-<img src="https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/refinementgraph.png" />
-![](https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/refinementgraph.png)
+<img src="https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/refinementgraph.png" width="300"/>
 
 The task is to learn a definition of the daughter relation in terms of the relation female and parent.    
 
