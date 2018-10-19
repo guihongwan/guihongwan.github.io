@@ -115,6 +115,7 @@ arcs correspond to the basic refinement operations:
 <img src="refinementgraph.png"
      alt="refinement graph"
      style="float: left; margin-right: 10px;" />
+<img src="refinementgraph.png" width="800" />
 
 The task is to learn a definition of the daughter relation in terms of the relation female and parent.    
 
