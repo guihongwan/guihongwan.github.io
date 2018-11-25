@@ -19,7 +19,7 @@ In automated theorem proving, this can lead to greater efficiencies in proving a
 ## Logic programs
 
 Logic programs consist of clauses. The conclusion part of a clause is termed the head and the condition part the body of the clause.    
-The head and boy of a clause consist of atoms.    
+The head and body of a clause consist of atoms.    
 An atom being a predicate applied to some arguments, which are called terms.    
 a gound term: a term that does not contain any free variables.    
 E.G.    
@@ -49,25 +49,25 @@ From training examples, ILP then induces a logic program(predicate definition) c
 Given is a set of examples, positive examples and negative examples.     
 Given are also background relations.     
 Finally, a hypothesis language, specifying syntatic restrictions on the definition of p is also given.   
-The task is to find a definiton of the target relation p that is consitent and complete, i.e., explains all the positive and none of the negative tuples.     
+The task is to find a definiton of the target relation p that is consistent and complete, i.e., explains all the positive and none of the negative tuples.     
 $ E = P \cup N, B$    
 The task is to find a hypothesis H such that $\forall e \in P: B \land H \vDash e$(H is complete) and $ \forall e \in N: B \land H \nvDash e$(H is consistent)
 
 ### A Common Aprroach
 Use a greedy covering algorithm     
 Repeat while some posititive examples remain unvovered(not entailed):    
-    - Find a good clause(one that covers as many positive examples as possible but no/few nagatives)
-    - Add that clause to the current theory, and remove the positve examples that it covers.
+    - Find a good clause(one that covers as many positive examples as possible but no/few nagatives)     
+    - Add that clause to the current theory, and remove the positve examples that it covers.     
 
 ILP algorithms use this apprach but vary in thir method for $\textbf{finding a good clause}$.       
 
 In a main loop, a covering algorithm constructs a set of clauses.     
-Starting from an empty set of clauses,
-    - it constructs a clause explaining some of the positive examples    
-    - adds this to the hypothesis, and removes the positive exaples explained    
+Starting from an empty set of clauses,       
+    - it constructs a clause explaining some of the positive examples      
+    - adds this to the hypothesis, and removes the positive exaples explained      
 Repeat untill all positive examples have been explained.(The hypothesis is complete.)     
 
-In the inner loop of the covering algorithm, individual clauses are constructed by (heuristically) searching the space of possible clauses, structured by a specialization or generalization operator.
+In the inner loop of the covering algorithm, individual clauses are constructed by (heuristically) searching the space of possible clauses, structured by a specialization or generalization operator.       
 
 
 ### Structuring the space of clauses
@@ -95,7 +95,7 @@ $c \vDash c'$ if c $\theta$-subsumes c'
 c is more general than c' if $c \vDash c'$    
 
 $\theta$-subsumption introduces a lattice on the set of reduced clauses: this enables ILP systems to prune large parts of the search space.     
-$\theta$-subsumption also provdes the basis for clause construction by to-down searching of refinement graphs and bounding the search of refinement graphs from below by using a bottom clause.
+$\theta$-subsumption also provdes the basis for clause construction by top-down searching of refinement graphs and bounding the search of refinement graphs from below by using a bottom clause.
 
 ### Searching the space of clauses
 $\textbf{A top-down manner}$: from general to specific hypotheses, using a $\theta$-subsumption-based specialization operator(a refinement operator).     
