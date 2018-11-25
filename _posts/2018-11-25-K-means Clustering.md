@@ -1,4 +1,3 @@
-
 ---  
 tag: Clustering 
 ---
@@ -20,7 +19,9 @@ $u_j$ is the mean of all points in class j. Similarly, $u_{c(i)}$ is the mean of
 
 Keeping c(i) unchanged, the value of $u_j$ that minimizes E: can be computed by taking the derivative of E with respect to $u_j$ and equating to 0.     
 
-$\frac{\partial}{\partial u_j} |x_i - u_j|^2 = \frac{\partial}{\partial u_j}(|x_i|^2 - 2x_i^Tu_j + |u_j|) = -2x_i + 2u_j = 2u_j - 2x_i$ 
+$\frac{\partial}{\partial u_j} |x_i - u_j|^2 $    
+= $\frac{\partial}{\partial u_j}(|x_i|^2 - 2x_i^Tu_j + |u_j|) $    
+= $-2x_i + 2u_j = 2u_j - 2x_i$ 
 
 Therefore:    
 $\frac{\partial}{\partial u_j} \frac E 2 = \sum\limits_{c(i)=j}(u_j - u_i) = \sum\limits_{c(i)=j}u_j - \sum\limits_{c(i)=j}x_i = m_j u_j - \sum\limits_{c(i)=j} x_i$    
@@ -218,8 +219,7 @@ print(Xt)
 plotData(Xt)
 ```
 
-
-![png](output_17_0.png)
+<img src="https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/output_17_0.png" width="300"/>
 
 
 
@@ -230,12 +230,7 @@ L = KmeanLloyd(Xt, k, r)
 plotClusters(Xt, L)
 ```
 
-    D: [[0.0, 25.11111111111111], [16.0, 1.1111111111111112], [26.0, 0.44444444444444453], [36.0, 1.1111111111111112]]
-    [1, 2, 2, 2]
-
-
-
-![png](output_18_1.png)
+<img src="https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/output_18_1.png" width="300"/>
 
 
 
@@ -246,10 +241,5 @@ C = KmeanLloyd(Xt, k, r)
 plotClusters(Xt, C)
 ```
 
-    D: [[36.0, 0.0, 20.5], [4.0, 16.0, 0.5], [2.0, 26.0, 0.5], [0.0, 36.0, 2.5]]
-    [2, 3, 3, 1]
-
-
-
-![png](output_19_1.png)
+<img src="https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/output_19_1.png" width="300"/>
 
