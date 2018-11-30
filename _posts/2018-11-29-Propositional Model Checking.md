@@ -401,3 +401,9 @@ print('final model:', model)
     4  iteration: {'F': True, 'B': True, 'C': True, 'A': True, 'D': True, 'E': True}
     final model: {'F': True, 'B': True, 'C': True, 'A': True, 'D': True, 'E': True}
 
+<br>
+
+Reference：Artificail Intelligence: A modern Approach, Third EDITION.
+
+<br>
+For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [Propositional Model Checking](https://guihongwan.github.io/2018/11/Propositional-Model-Checking/) 
