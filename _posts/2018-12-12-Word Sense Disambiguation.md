@@ -43,9 +43,9 @@ $ ss = argmax_{s\in S} P(s|f)$
 $= argmax_{s\in S} {p(f|s)p(s)}$      
 $= argmax_{s\in S} \prod_{i=0}^{n-1}p(f_i|s)p(s)$,We assume that $f = [f_0, f_1, ...,f_{n-1}]$ and each of $f_i$ and $f_j$ are independent.       
 
-$p(s) = {COUNT(s,w) \over COUNT(w)}$, the number of times the sense s occurs divided by the total count of the target word.
+$p(s) = {COUNT(s,w) \over COUNT(w)}$, the number of times the sense s occurs divided by the total count of the target word.    
 
-$p(fi|s)= {COUNT(f_i,s)\over COUNT(s)}$
+$p(fi|s)$ = ${COUNT(f_i,s) \over COUNT(s)}$
 
 ## Semcor
 352 documents from Brown corpus manually tagged for WordNet senses.
