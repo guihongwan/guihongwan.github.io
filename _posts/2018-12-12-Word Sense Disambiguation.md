@@ -38,6 +38,7 @@ Then the corresponding feature vector is [0,0,1,1,0].
 Hence, we have training data, feature vector:f, and a word.    
 We want to figure out the sense of the word.
 
+
 ## Algorithem
 $ s' $     
 $= argmax_{s\in S} P(s|f)$       
@@ -48,6 +49,7 @@ $= argmax_{s\in S} \prod_{i=0}^{n-1}p(f_i|s)p(s)$,We assume that $f = [f_0, f_1,
 $p(s) = {COUNT(s,w) \over COUNT(w)}$, the number of times the sense s occurs divided by the total count of the target word.
 
 $p(fi|s)= {COUNT(f_i,s)\over COUNT(s)}$
+
 
 ## Semcor
 352 documents from Brown corpus manually tagged for WordNet senses.
