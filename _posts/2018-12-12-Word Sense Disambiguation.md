@@ -42,10 +42,9 @@ We want to figure out the sense of the word.
 ## Algorithem
 $ s' $     
 $= argmax_{s\in S} P(s|f)$       
-$= argmax_{s\in S} {{p(f|s)p(s)} \over {p(f)}}$     
-$= argmax_{s\in S} {p(f|s)p(s)}$      
+$= argmax_{s\in S} {{{p(f|s)}{p(s)}} \over {p(f)}}$     
+$= argmax_{s\in S} {{p(f|s)}{p(s)}}$      
 $= argmax_{s\in S} \prod_{i=0}^{n-1}p(f_i|s)p(s)$,We assume that $f = [f_0, f_1, ...,f_{n-1}]$ and each of $f_i$ and $f_j$ are independent.       
-
 $p(s) = {COUNT(s,w) \over COUNT(w)}$, the number of times the sense s occurs divided by the total count of the target word.
 
 $p(fi|s)= {COUNT(f_i,s)\over COUNT(s)}$
@@ -363,3 +362,9 @@ print(sense, sense.definition())
   Ndoc: number of documents in corpus.    
   Ndoc(word_i): number of documents where word_i is included.
 
+<br>
+
+Reference：Speech and Language Processing An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition, SECOND EDITION.
+
+<br>
+For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [Word Sense Disambiguation](https://guihongwan.github.io/2018/12/Word-Sense-Disambiguation/)
