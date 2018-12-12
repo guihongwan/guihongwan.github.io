@@ -363,9 +363,3 @@ print(sense, sense.definition())
   Ndoc: number of documents in corpus.    
   Ndoc(word_i): number of documents where word_i is included.
 
-<br>
-
-Reference：Speech and Language Processing An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition, SECOND EDITION.
-
-<br>
-For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [Word Sense Disambiguation](https://guihongwan.github.io/2018/12/Word-Sense-Disambiguation/)
