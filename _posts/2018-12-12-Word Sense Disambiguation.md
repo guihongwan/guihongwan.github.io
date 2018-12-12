@@ -121,15 +121,7 @@ sem0[0] # first sentence
 
 ```python
 tree = sem0[0][2]
-tree
 ```
-
-
-
-
-![png](output_9_0.png)
-
-
 
 
 ```python
