@@ -45,7 +45,7 @@ $= argmax_{s\in S} \prod_{i=0}^{n-1}p(f_i|s)p(s)$,We assume that $f = [f_0, f_1,
 
 $p(s) = {COUNT(s,w) \over COUNT(w)}$, the number of times the sense s occurs divided by the total count of the target word.    
 
-$p(fi \given s) = {COUNT(f_i,s) \over COUNT(s)}$
+$p(f_i \given s) = {COUNT(f_i,s) \over COUNT(s)}$
 
 ## Semcor
 352 documents from Brown corpus manually tagged for WordNet senses.
