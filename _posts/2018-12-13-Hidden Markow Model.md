@@ -9,7 +9,7 @@ tag: NLP
 - a start state $q_0$ and a final state $q_f$
 - O = $o_1,o_2,...,o_T$
 - A: transition matrix. $a_{ij}$ means the probability from $q_i$ to $q_j$
-- B = ${P(x_i=o_t|q_i)}$, the probabilities of all possible $o_t$ when in the state of some $q_i$
+- B = ${P(x_i=o_t \given q_i)}$, the probabilities of all possible $o_t$ when in the state of some $q_i$
 
 ## HMM For Three Basic Problems
 ### Likelihood
