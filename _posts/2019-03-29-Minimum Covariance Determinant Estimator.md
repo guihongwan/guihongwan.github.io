@@ -14,14 +14,14 @@ $$f(x) = {1\over \sqrt{\mid S \mid}}g(d^2(x, \mu, S)$$
 
 ## Distance     
 $\textbf{Mahalanobis distance}$: should tell us how far away $x$ is from the center of the data cloud    
-$$MD(x,\bar{x},Cov(X)) = \sqrt{(x-\bar{x})'Cov(X)^{-1}(x-\bar{x})}$$
+$MD(x,\bar{x},Cov(X)) = \sqrt{(x-\bar{x})'Cov(X)^{-1}(x-\bar{x})}$    
 $\mu$ is the arithmetic mean, and $Cov(X)$ is the covariance matrix.    
 
 
 Mahalanobis distances are known to suffer from masking(strongly affected by contamination).     
 
 $\textbf{A robust distance}$:     
-$$RD(x,\hat{x}_{MCD},\hat{S}_{MCD})= d(x,\hat{x}_{MCD},\hat{S}_{MCD})$$
+$RD(x,\hat{x}_{MCD},\hat{S}_{MCD})= d(x,\hat{x}_{MCD},\hat{S}_{MCD})$    
 $\hat{x}_{MCD}$ is the MCD estimate of location and $S_{MCD}$ is the MCD covariance estimate.
 
 # Definition
@@ -34,6 +34,7 @@ The MCD estimator is the most robust when taking h = [(n + p + 1)/2], at the pop
 
 But the MCD suffers from low efficiency. For example, if $\alpha$=0.5 the asymptotic relative efficiency of the diagonal elements of the MCD scatter matrix relative to the sample covariance matrix is only 6% when p=2.    
 In order to increase the efficiency while retaining high robustness one can apply a weighting step. For the MCD, this yields the estimates:    
+
 $$\hat{\mu}_{MCD} = {\sum_{i=1}^n W(d_i^2)x_i \over \sum_{i=1}^n W(d_i^2)}$$
 
 $$\hat{S}_{MCD} = c_1{1\over n}\sum_{i=1}^nW(d_i^2)(x_i-\hat{S}_{MCD})(x_i-\hat{S}_{MCD})'$$
@@ -62,15 +63,7 @@ colnames(wine) <- c('Type', 'Alcohol', 'Malic', 'Ash',
                       'Dilution', 'Proline')
 dim(wine)
 ```
-
-
-<ol class=list-inline>
-	<li>178</li>
-	<li>14</li>
-</ol>
-
-
-
+178 14
 
 ```R
 wine.nolabel = wine[,2:14]
@@ -79,16 +72,8 @@ head(wine.nolabel)
 ```
 
 
-<ol class=list-inline>
-	<li>178</li>
-	<li>13</li>
-</ol>
+178 13
 
-
-
-
-<table>
-<thead><tr><th scope=col>Alcohol</th><th scope=col>Malic</th><th scope=col>Ash</th><th scope=col>Alcalinity</th><th scope=col>Magnesium</th><th scope=col>Phenols</th><th scope=col>Flavanoids</th><th scope=col>Nonflavanoids</th><th scope=col>Proanthocyanins</th><th scope=col>Color</th><th scope=col>Hue</th><th scope=col>Dilution</th><th scope=col>Proline</th></tr></thead>
 <tbody>
 	<tr><td>14.23</td><td>1.71 </td><td>2.43 </td><td>15.6 </td><td>127  </td><td>2.80 </td><td>3.06 </td><td>0.28 </td><td>2.29 </td><td>5.64 </td><td>1.04 </td><td>3.92 </td><td>1065 </td></tr>
 	<tr><td>13.20</td><td>1.78 </td><td>2.14 </td><td>11.2 </td><td>100  </td><td>2.65 </td><td>2.76 </td><td>0.26 </td><td>1.28 </td><td>4.38 </td><td>1.05 </td><td>3.40 </td><td>1050 </td></tr>
@@ -110,12 +95,7 @@ dim(wine.subset.first)
 # write.csv(wine.subset.first, file = "Wine1_nolabel.csv")
 ```
 
-
-<ol class=list-inline>
-	<li>59</li>
-	<li>2</li>
-</ol>
-
+59 2
 
 
 
