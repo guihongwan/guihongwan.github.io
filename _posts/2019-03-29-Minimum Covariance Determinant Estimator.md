@@ -21,7 +21,8 @@ $\mu$ is the arithmetic mean, and $Cov(X)$ is the covariance matrix.
 Mahalanobis distances are known to suffer from masking(strongly affected by contamination).     
 
 $\textbf{A robust distance}$:     
-$RD(x,\hat{x}_{MCD},\hat{S}_{MCD})= d(x,\hat{x}_{MCD},\hat{S}_{MCD})$    
+$$RD(x,\hat{x}_{MCD},\hat{S}_{MCD})= d(x,\hat{x}_{MCD},\hat{S}_{MCD})$$   
+    
 $\hat{x}_{MCD}$ is the MCD estimate of location and $S_{MCD}$ is the MCD covariance estimate.
 
 # Definition
@@ -73,7 +74,7 @@ head(wine.nolabel)
 
 
 178 13
-
+<table>
 <tbody>
 	<tr><td>14.23</td><td>1.71 </td><td>2.43 </td><td>15.6 </td><td>127  </td><td>2.80 </td><td>3.06 </td><td>0.28 </td><td>2.29 </td><td>5.64 </td><td>1.04 </td><td>3.92 </td><td>1065 </td></tr>
 	<tr><td>13.20</td><td>1.78 </td><td>2.14 </td><td>11.2 </td><td>100  </td><td>2.65 </td><td>2.76 </td><td>0.26 </td><td>1.28 </td><td>4.38 </td><td>1.05 </td><td>3.40 </td><td>1050 </td></tr>
