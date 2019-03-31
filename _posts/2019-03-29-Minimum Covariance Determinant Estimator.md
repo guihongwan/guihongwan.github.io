@@ -21,12 +21,10 @@ $\mu$ is the arithmetic mean, and $Cov(X)$ is the covariance matrix.
 Mahalanobis distances are known to suffer from masking(strongly affected by contamination).     
 
 $\textbf{A robust distance}$:     
-$$RD(x,\hat{x}_{MCD},\hat{S}_{MCD})= d(x,\hat{x}_{MCD},\hat{S}_{MCD})$$   
+$$RD(x,\hat{x}_{MCD},\hat{S}_{MCD})= d(x,\hat{x}_{MCD},\hat{S}_{MCD})$$     
 
-$\hat{x}_{MCD}$     
-is the MCD estimate of location and 
-$S_{MCD}$    
-is the MCD covariance estimate.
+$$\hat{x}_{MCD}$$ is the MCD estimate of location and 
+$$S_{MCD}$$ is the MCD covariance estimate.
 
 # Definition
 The raw MCD estimator with tuning constant $n/2 \leq h \leq n$ is ($\hat{\mu}_0, \hat{S}_0$)
