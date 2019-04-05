@@ -1,6 +1,5 @@
-
 ---  
-tag: Clustering 
+tag: Clustering
 ---
 
 # Problem
@@ -20,7 +19,7 @@ $u_j$ is the mean of all points in class j. Similarly, $u_{c(i)}$ is the mean of
 
 Keeping c(i) unchanged(fix the clusters), the value of $u_j$ that minimizes E: can be computed by taking the derivative of E with respect to $u_j$ and equating to 0.     
 
-$\frac{\partial}{\partial u_j} |x_i - u_j|^2 = \frac{\partial}{\partial u_j}(|x_i|^2 - 2x_i^Tu_j + |u_j|^2) = -2x_i + 2u_j = 2u_j - 2x_i$ 
+$\frac{\partial}{\partial u_j} \mid x_i - u_j \mid ^2 = \frac{\partial}{\partial u_j}(\mid x_i \mid^2 - 2x_i^Tu_j + \mid u_j \mid^2) = -2x_i + 2u_j = 2u_j - 2x_i$ 
 
 Therefore:    
 $\frac{\partial}{\partial u_j} \frac E 2 = \sum\limits_{c(i)=j}(u_j - u_i) = \sum\limits_{c(i)=j}u_j - \sum\limits_{c(i)=j}x_i = m_j u_j - \sum\limits_{c(i)=j} x_i$    
