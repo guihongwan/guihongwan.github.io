@@ -372,4 +372,5 @@ plotClusters(Xt, L, U)
 <!-- ![png](output_15_1.png) -->
 <img src="https://github.com/guihongwan/guihongwan.github.io/raw/master/_posts/kmeansp_3.png" width="300"/>
 
-
+<br>
+For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [KMeans Parallel Clustering](https://guihongwan.github.io/2018/11/K-means-Parallel//)

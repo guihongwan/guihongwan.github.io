@@ -261,6 +261,5 @@ plotClusters(Xt, C)
 
 
 
-```python
-
-```
+<br>
+For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [KMeans Clustering](https://guihongwan.github.io/2018/11/K-means-Clustering/)

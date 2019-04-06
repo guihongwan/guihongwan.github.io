@@ -257,6 +257,5 @@ Input: $x_1,...,x_n$ and associated weights $w_1,...,w_m$. k
 We can select $u_{t+1}$ at random from $x_1,...,x_n$ where the probability of selecting $x_i$ is proportional to $w_id_i$
 
 
-```python
-
-```
+<br>
+For reproduction, please specify：[GHWAN's website](https://guihongwan.github.io) » [KMeans++ Clustering](https://guihongwan.github.io/2018/11/K-means++-Clustering/)
