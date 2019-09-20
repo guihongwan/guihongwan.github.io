@@ -32,6 +32,9 @@ print(X.shape)
 ```python
 # kernel PCA
 # n_components : int, default=None. If None, all non-zero components are kept.
+# kernel: default 'linear'
+# gamma: kernel coefficient for rbf, poly and sigmoid kernels
+# fit_inverse_transform: Learn the invser transform for non-precomputed kernels.
 kpca = KernelPCA(kernel="rbf", fit_inverse_transform=True, gamma=10)
 X_kpca = kpca.fit_transform(X)
 X_back = kpca.inverse_transform(X_kpca)
@@ -106,13 +109,13 @@ Linear:
 
 Non-linear:    
 - Kernel PCA    
-- $\bf{Independent\: Component\: Analysis}$: there is interesting signal in the directions of small variance.      
+- $\bf{Independent Component Analysis}$: there is interesting signal in the directions of small variance.      
 - Multi-dimensional scaling    
 
 # Principal Components Analysis
 
 $\bf{PCA}$: unsupervised problem.       
-$\bf{Linear \: Discriminant\: Analysis}$: supervised     
+$\bf{Linear  Discriminant Analysis}$: supervised     
 
 PCA operates on zero-centered data:    
 ${1\over N}\sum_\limits{i} x_i = 0$    
@@ -144,7 +147,7 @@ $x_i\rightarrow \phi(x_i)$
 But $\phi$ is never calculated explicitly($\phi$-space, called 'feature sapce'). Instead we work on the N-by-N kernel. Because we are never working directly in the feature space, the kernel-formulation of PCA is restricted in that it computes not the principal components themsevels, but the projectons of our data onto those components.     
 
 ## Steps for Kernel PCA
-
+    
 - Pick a kernel       
 $K(x_i,x_j) = \phi(x_i)^T\phi(x_j)$    
 - Center the kernel    
@@ -434,12 +437,12 @@ $$
 Proof:    
 $$
 Cv = {1 \over N }\sum_\limits{i} \phi(x_i)\phi(x_i)^Tv = \lambda v
-$$
+$$    
 thus    
 $$
 v = {1 \over \lambda N }\sum_\limits{i} \phi(x_i)\phi(x_i)^Tv = {1 \over \lambda N }\sum_\limits{i} \phi(x_i)^Tv\phi(x_i) = \sum_\limits{i} {\phi(x_i)^Tv \over \lambda N}\phi(x_i)
 $$
-We are able to show $xx^Tv = x^Tvx$.     
+We are able to show $xx^Tv = x^Tvx$, since $x^Tv$ is a scaler.     
 
 Hence,    
 $v = \sum_\limits{i} {a_{ri}}\phi(x_i)$, where $a_{ri} = {\phi(x_i)^Tv \over \lambda N}$.    
@@ -452,12 +455,12 @@ ${1 \over N }\sum_\limits{i} \phi(x_k)^T\phi(x_i)\sum_\limits{l} {a_{rl}}\phi(x_
 ${1 \over N }\sum_\limits{i} K(x_k,x_i)\sum_\limits{l} {a_{rl}}K(x_i,x_l) = \lambda \sum_\limits{l} {a_{rl}}K(x_k,x_l)$    
 $K^2{a_r} = N\lambda {a_r}K$     
 $K{a_r} = N\lambda {a_r}$     
-$K{a_r} = \lambda_r {a_r}$, where $\lambda_r = N\lambda$.     
+$K{a_r} = \lambda_r {a_r}$, where $\lambda_r = N\lambda$.$a_r$ is a vector with dimensin $n \times 1$.     
 
 Hence, $\textbf{finding $a_r$ is equivalent to finding the eigenvectors of $K$.}$
 
 Since $v^Tv = 1$    
-$\sum_\limits{i} ({a_{ri}}\phi(x_i)^T \sum_\limits{i} {a_{ri}}\phi(x_i) = \sum_\limits{i}\sum_\limits{j} {a_{ri}}{a_{rj}}\phi(x_i)^T \phi(x_j)$    
+$\sum_\limits{i} ({a_{ri}}\phi(x_i))^T \sum_\limits{i} {a_{ri}}\phi(x_i) = \sum_\limits{i}\sum_\limits{j} {a_{ri}}{a_{rj}}\phi(x_i)^T \phi(x_j)$    
 $a_r^TKa_r = 1$    
 Since $K{a_r} = \lambda_r {a_r}\Rightarrow a_r^T\lambda_r {a_r} = 1 \Rightarrow \parallel a_r \parallel = {1\over \sqrt{\lambda_r}}$
 
@@ -467,8 +470,8 @@ But even with ${1\over N}\sum_\limits{i} x_i = 0$, we cannot guarantee that ${1\
 We need to normalize the feature space.
 
 $\tilde{\phi} (x_i) = \phi(x_i) - {1\over n}\sum_\limits{k=1}^n\phi(x_k)$       
-$\tilde{K}(x_i,x_j) = \tilde{\phi}(x_i)^T\tilde{\phi}(x_j) = K(x_i,x_j) - {1\over n}\sum_\limits{k=1}^n K(x_i, x_k)- {1\over n}\sum_\limits{k=1}^n K(x_j, x_k) + {1\over n^2}\sum_\limits{l,k=1}^n K(x_l, x_k)$    
-$\tilde{K} = K -21_{1\over n}K+1_{1\over n}K1_{1\over n}$
+$\tilde{K}(x_i,x_j) = \tilde{\phi}(x_i)^T\tilde{\phi}(x_j) = K(x_i,x_j) - {1\over n}\sum_\limits{k=1}^n K(x_i, x_k)- {1\over n}\sum_\limits{k=1}^n K(x_j, x_k) + {1\over n^2}\sum_\limits{l,k=1}^n K(x_l, x_k)$      
+$\tilde{K} = K - 2*I_{\frac{1}{n}}K + I_{1\over n}KI_{1\over n}$
 
  or     
  $\tilde{K}(x_i,x_j) = \tilde{\phi}(x_i)\tilde{\phi}(x_j)^T$    
