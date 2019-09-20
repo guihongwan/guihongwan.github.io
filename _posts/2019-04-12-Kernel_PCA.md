@@ -471,11 +471,11 @@ We need to normalize the feature space.
 
 $\tilde{\phi} (x_i) = \phi(x_i) - {1\over n}\sum_\limits{k=1}^n\phi(x_k)$       
 $\tilde{K}(x_i,x_j) = \tilde{\phi}(x_i)^T\tilde{\phi}(x_j) = K(x_i,x_j) - {1\over n}\sum_\limits{k=1}^n K(x_i, x_k)- {1\over n}\sum_\limits{k=1}^n K(x_j, x_k) + {1\over n^2}\sum_\limits{l,k=1}^n K(x_l, x_k)$      
-$\tilde{K} = K - 2*I_{\frac{1}{n}}K + I_{1\over n}KI_{1\over n}$
+$\tilde{K} = K - 2I_{\frac{1}{n}}K + I_{1\over n}KI_{1\over n}$
 
  or     
  $\tilde{K}(x_i,x_j) = \tilde{\phi}(x_i)\tilde{\phi}(x_j)^T$    
-$\tilde{K} = K -1_{1\over n}K - K1_{1\over n} + 1_{1\over n}K1_{1\over n}$
+$\tilde{K} = K -I_{1\over n}K - KI_{1\over n} + I_{1\over n}KI_{1\over n}$
 
 # Reference  
 1. https://scikit-learn.org/stable/auto_examples/decomposition/plot_kernel_pca.html
