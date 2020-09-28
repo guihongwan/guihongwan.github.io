@@ -2,7 +2,7 @@
 title: "Improving the Accuracy of Principal Component Analysis by the Maximum Entropy Method"
 collection: publications
 permalink: /publication/2019-ICTAI-ENT
-excerpt: ''
+<!-- excerpt: '' -->
 date: 2019-10-01
 venue: 'ICTAI'
 paperurl: 'http://academicpages.github.io/files/paper_2019_ent1.pdf'
