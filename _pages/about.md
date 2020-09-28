@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Research"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
+I am a Ph.D candidate working with Prof. 
 My research interests are in data science with applications to 
 computer vision and machine learning.
 I am interested in algorithms for efficiently processing, modeling,
