@@ -30,3 +30,5 @@ Work experience
 
 * Android Software Engineer
   * Actions Semiconductor Co., Ltd
+
+[Download resume here](/files/Resume.pdf)
