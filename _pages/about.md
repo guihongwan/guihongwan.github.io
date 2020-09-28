@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 I am a Ph.D candidate working with Prof. [Haim Schweitzer](https://personal.utdallas.edu/~haim/)
-at The University of Texas at Dallas.
+at University of Texas at Dallas.
 My research interests are in data science with applications to 
 computer vision and machine learning.
 I am interested in algorithms for efficiently processing, modeling,
