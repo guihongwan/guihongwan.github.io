@@ -1,11 +1,11 @@
 ---
 title: "Fast Distance Metrics in Low-dimensional Space for Neighbor Search Problems"
 collection: publications
-permalink: /publication/2020-ICDM-ENT
+permalink: /files/paper_2020_ent2.pdf
 excerpt: ''
 date: 2020-11-01
 venue: 'ICDM'
-paperurl: '/files/paper_2020_ent2.pdf'
+<!-- paperurl: '/files/paper_2020_ent2.pdf' -->
 ---
 We consider popular dimension reduction techniques that project data on a low dimensional subspace. They include Principal Component Analysis, Column Subset Selection, and Johnson-Lindenstrauss projections. These techniques have been classically used to efficiently compute various approximations. We propose the following three-step procedure for enhancing the accuracy of such approximations: 1. Unknown quantities in the approximation are replaced with random variables. 2. The Maximum Entropy method is applied to infer the most likely probability distribution. 3. Expected values of the random variables are used to compute the enhanced estimates. Our use of the Maximum Entropy method requires knowledge of vector norms that can be easily computed during the dimension reduction. We demonstrate significant enhancements in average accuracy for Euclidean distance and Mahalanobis distance, and improvements in evaluating k-nearest neighbors and k-furthest neighbors by using the enhanced Euclidean distance formula.
 
