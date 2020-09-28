@@ -1,40 +1,31 @@
-<!DOCTYPE html>
-<html>
+---
+layout: compress
+---
 
-  {% include head.html %}
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
   <body>
 
-    <span class="mobile btn-mobile-menu">        
-      <div class="nav_container">
-         <nav class="nav-menu-item" style = "float:right">
-            <i class="nav-menu-item">
-              <a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">  {{site.blog_button.title}}
-              </a>
-            </i>
-            {% for item in site.nav %}
-                <i class="nav-menu-item">
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-                  <a href="{{item.url}}" title="{{item.description}}" class="btn-mobile-menu__icon">
-                      {{item.title}}
-                  </a>
-                </i>
-            {% endfor %}
-          </nav>
-      </div>
-    </span>
-    
-    {% include side-panel.html %}
+    {{ content }}
 
-    <div class="content-wrapper">
-        <div class="content-wrapper__inner">
-            {{ content }}
-            {% include footer.html %}
-        </div>
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
     </div>
-    
-    {% include external.html %}
-    
-  </body>
 
+    {% include scripts.html %}
+
+  </body>
 </html>
