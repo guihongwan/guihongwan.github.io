@@ -11,8 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Electronics and Information Engineering, South-Central University For Nationalities, 2010
 * Ph.D in Computer Science, University of Texas at Dallas, 2022 (expected)
+* B.S. in Electronics and Information Engineering, South-Central University For Nationalities, 2010
+
 
 
 Publications
@@ -26,7 +27,6 @@ Work experience
 * Teaching Assistant
   * The University of Texas at Dallas
   * Assist in the teaching of following graduate level courses: Machine Learning, Computer Vision, Artificial Intelligence, Data Representation.
-  * Help students to understand the underlying math, algorithms and projects.
 
 * Android Software Engineer
   * Actions Semiconductor Co., Ltd
