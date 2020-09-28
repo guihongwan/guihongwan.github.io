@@ -83,7 +83,7 @@ author:
   name             : "Guihong WAN"
   avatar           : "profile.jpg"
   bio              : "Ph.D candidate in Computer Science at University of Texas at Dallas."
-  # location         : "Location"
+  location         : 
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=lBar8UkAAAAJ"
