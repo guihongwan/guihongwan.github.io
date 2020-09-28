@@ -2,7 +2,7 @@
 title: "Heuristic Search Algorithm for Dimensionality Reduction Optimally Combining Feature Selection and Feature Extraction"
 collection: publications
 permalink: /publication/2019-AAAI-HLR
-<!-- excerpt: '' -->
+excerpt: ''
 date: 2019-11-01
 venue: 'AAAI'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
