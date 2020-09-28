@@ -22,3 +22,8 @@ of data,
 and can be used to obtain scalable algorithms in data intensive areas such as
 computer vision and large scale machine learning.
 
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
