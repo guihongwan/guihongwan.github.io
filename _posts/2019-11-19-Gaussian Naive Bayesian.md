@@ -1,7 +1,6 @@
 ---  
 tag: Machine Learning 
 ---
-# Description
 
 The Gaussian density function of $m$-dimensional vectors is:    
 $g(x;\mu,C) = {1\over (\sqrt{2\pi})^m |C|^{1/2}} e^{-{1 \over 2} (x-\mu)^TC^{-1}(x-\mu)}$    
