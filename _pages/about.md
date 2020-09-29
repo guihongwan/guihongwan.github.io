@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 I am a Ph.D candidate working with Prof. [Haim Schweitzer](https://personal.utdallas.edu/~haim/)
-at Computer Vision and Data Lab
+in Computer Vision and Data Lab
 at University of Texas at Dallas.
 My research interests are in data science with applications to 
-computer vision and machine learning with specific focus on anomalous patter detection, representative selection, feature selection/extraction.
+computer vision and machine learning, with specific focus on anomalous patter detection, representative selection and feature selection/extraction.
 
 
 Publications
