@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+Download resume [here](/files/Resume.pdf)
+
 Education
 ======
 * Ph.D in Computer Science, University of Texas at Dallas, 2022 (expected)
@@ -30,5 +32,3 @@ Work experience
 
 * Android Software Engineer
   * Actions Semiconductor Co., Ltd
-
-Download resume [here](/files/Resume.pdf)
