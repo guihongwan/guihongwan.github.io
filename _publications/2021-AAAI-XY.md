@@ -8,4 +8,4 @@ venue: 'AAAI (Under review)'
 paperurl: '/files/reviewing-astarxy.pdf'
 ---
 
-[Download paper here](/files/reviewing-astarxy.pdf)
+Download paper [here](/files/reviewing-astarxy.pdf)
