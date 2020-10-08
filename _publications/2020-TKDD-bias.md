@@ -1,10 +1,10 @@
 ---
-title: "Fast Distance Metrics in Low-dimensional Space for Neighbor Search Problems"
+title: "The Bias Method for Robust Centered Principal Component Analysis"
 collection: publications
 permalink: /publication/2020-TKDD-bias
 excerpt: ''
-date: 2020-11-01
-venue: 'ICDM'
+date: 2020-4-01
+venue: 'TKDD (Under review)'
 paperurl: '/files/reviewing-tkdd-bias.pdf'
 ---
 
