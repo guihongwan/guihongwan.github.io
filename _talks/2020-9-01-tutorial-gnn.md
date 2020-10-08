@@ -7,7 +7,7 @@ date: 2020-09-01
 location: "UTDallas, TX"
 ---
 
-Introduction to Graph neural networks including GCN, GAT and robustness of GNN.
+Introduction to Graph neural networks (GNN) including GCN, GAT and the robustness of GNN.
 
 Download PPT1 [here](/files/presentation_graph_gcn.pdf)
 
