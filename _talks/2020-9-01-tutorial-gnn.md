@@ -3,7 +3,6 @@ title: "Neural Networks on Graphs"
 collection: talks
 type: "Tutorial"
 permalink: /talks/2020-9-01-tutorial-gnn
-venue: ''
 date: 2020-09-01
 location: "UTDallas, TX"
 ---
