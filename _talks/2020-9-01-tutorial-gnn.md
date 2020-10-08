@@ -1,5 +1,5 @@
 ---
-title: "Neural Networks on Graphs"
+title: "Introduction to Neural Networks on Graphs"
 collection: talks
 type: "Tutorial"
 permalink: /talks/2020-9-01-tutorial-gnn
