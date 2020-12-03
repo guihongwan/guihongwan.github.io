@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2020-AAAI-fastRPCA
 excerpt: ''
 date: 2021-9-01
-venue: 'AAAI (Under review)'
+venue: 'ICDE (Under review)'
 paperurl: '/files/reviewing-fast.pdf'
 ---
 
