@@ -20,6 +20,7 @@ Publications
   {% endfor %}</ul> -->
 - [Accelerated Combinatorial Search for Outlier Detection with Provable Bound on Sub-Optimality](files/paper_2021-chunking.pdf), AAAI 2021.
 - [A New Robust Subspace Recovery Algorithm (Student Abstract)](files/paper_2021_lookahead_abstract.pdf), AAAI 2021.
+- [Graph Sparsification via Meta-Learning](files/paper_2021-sparsegraph.pdf), DLG-AAAI 2021.
 - [Fast Distance Metrics in Low-dimensional Space for Neighbor Search Problems](files/paper_2020_ent2.pdf), ICDM 2020.
 - [A Bias Trick for Centered Robust Principal Component Analysis (Student Abstract)](files/paper_2020_bias_abstract.pdf), AAAI 2020.
 - [Improving the Accuracy of Principal Component Analysis by the Maximum Entropy Method](files/paper_2019_ent1.pdf), ICTAI 2019.
