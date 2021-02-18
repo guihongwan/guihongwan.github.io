@@ -5,7 +5,7 @@ permalink: /publication/2021-ICDE-GraphSparse
 excerpt: ''
 date: 2021-2-14
 venue: 'ICDE'
-paperurl: '/files/paper_2021-graph.pdf'
+paperurl: '/files/paper_2021-sparsegraph.pdf'
 ---
 
-[Download paper here](/files/paper_2021-graph.pdf.pdf)
+[Download paper here](/files/paper_2021-sparsegraph.pdf)

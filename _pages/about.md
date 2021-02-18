@@ -19,7 +19,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
 - [Accelerated Combinatorial Search for Outlier Detection with Provable Bound on Sub-Optimality](files/paper_2021-chunking.pdf), AAAI 2021.
-- [Edge Sparsification for Graphs via Meta-Learning](files/paper_2021-graph.pdf), ICDE 2021.
+- [Edge Sparsification for Graphs via Meta-Learning](files/paper_2021-sparsegraph.pdf), ICDE 2021.
 - [A New Robust Subspace Recovery Algorithm (Student Abstract)](files/paper_2021_lookahead_abstract.pdf), AAAI 2021.
 <!-- - [Graph Sparsification via Meta-Learning](files/paper_2021-sparsegraph.pdf), DLG-AAAI 2021. -->
 - [Fast Distance Metrics in Low-dimensional Space for Neighbor Search Problems](files/paper_2020_ent2.pdf), ICDM 2020.
